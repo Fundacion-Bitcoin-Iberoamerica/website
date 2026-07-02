@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundación Bitcoin Iberoamérica</title>
+  <link rel="icon" type="image/png" href="assets/logo-fullcolor.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo-fullcolor.png" alt="FBI Logo" />
+        <div class="nav-name-stack">
+          <span>Fundación</span>
+          <span>Bitcoin</span>
+          <span>Iberoamérica</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#mision" data-i18n="nav_mision">Misión</a></li>
+        <li><a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a></li>
+        <li><a href="#equipo" data-i18n="nav_equipo">Equipo</a></li>
+        <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="pt">PT</button>
+        </div>
+        <button class="nav-toggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-identity">
+        <img src="assets/logo-fullcolor.png" alt="Fundación Bitcoin Iberoamérica" class="hero-logo" />
+        <div class="hero-title-block">
+          <h1 class="hero-name-stack">
+            <span>Fundación</span>
+            <span>Bitcoin</span>
+            <span>Iberoamérica</span>
+          </h1>
+          <p class="hero-founded" data-i18n="hero_founded">Establecida en 2014</p>
+        </div>
+      </div>
+      <p class="hero-sub" data-i18n="hero_sub">
+        Promoviendo educación, innovación y adopción de Bitcoin en Latinoamérica, España y Portugal.
+      </p>
+      <a href="#proyectos" class="btn-primary" data-i18n="hero_cta">Conoce nuestros proyectos</a>
+    </div>
+    <div class="hero-scroll-hint"><span>&#8595;</span></div>
+  </section>
+
+  <div class="phoenix-divider" aria-hidden="true"><img src="assets/logo-fullcolor.png" alt="" /></div>
+
+  <!-- MISIÓN -->
+  <section id="mision">
+    <div class="container">
+      <div class="section-label" data-i18n="mision_label">Quiénes somos</div>
+      <div class="hb-title-wrap">
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon" aria-hidden="true"/>
+        <h2 data-i18n="mision_title">Nuestra Misión</h2>
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon hb-flip" aria-hidden="true"/>
+      </div>
+      <p class="mission-text" data-i18n="mision_text">
+        La Fundación Bitcoin Iberoamérica es una organización sin fines de lucro, pionera en la región, dedicada a promover el desarrollo y la adopción de Bitcoin como pilares de libertad financiera, privacidad y soberanía tecnológica. Impulsamos este cambio a través de iniciativas locales de alto impacto y una sólida cooperación global en todo el espacio Iberoamericano.
+      </p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">&#127891;</div>
+          <h3 data-i18n="pillar_edu_title">Educación</h3>
+          <p data-i18n="pillar_edu_desc">Formamos comunidades con conocimiento financiero y tecnológico basado en Bitcoin.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#9881;</div>
+          <h3 data-i18n="pillar_inn_title">Innovación</h3>
+          <p data-i18n="pillar_inn_desc">Financiamos desarrolladores y proyectos que construyen sobre la red Bitcoin.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#127758;</div>
+          <h3 data-i18n="pillar_ado_title">Adopción</h3>
+          <p data-i18n="pillar_ado_desc">Impulsamos el ecosistema regional con eventos, grants e iniciativas de base.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="phoenix-divider" aria-hidden="true"><img src="assets/logo-fullcolor.png" alt="" /></div>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="section-label" data-i18n="proyectos_label">Lo que apoyamos</div>
+      <div class="hb-title-wrap">
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon" aria-hidden="true"/>
+        <h2 data-i18n="proyectos_title">Proyectos e Iniciativas que apoyamos</h2>
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon hb-flip" aria-hidden="true"/>
+      </div>
+      <p class="section-intro" data-i18n="proyectos_intro">Algunos de los proyectos e iniciativas más destacados que reciben el apoyo de la Fundación Bitcoin Iberoamérica.</p>
+
+      <div class="projects-grid">
+
+        <!-- LABITCONF -->
+        <div class="project-card project-card--highlight">
+          <img src="assets/projects/labitconf-2025.jpg" alt="LABITCONF 2025 — UNSTOPPABLE" class="card-img" style="object-position: right center;" />
+          <div class="card-body">
+            <span class="card-tag" data-i18n="tag_conference">Conferencia Anual</span>
+            <h3>LABITCONF</h3>
+            <p data-i18n="p0_desc">La conferencia Bitcoin más antigua del mundo en actividad. Desde 2013, reúne cada año a +200 speakers y +10.000 asistentes de toda Iberoamérica. Organizada por la Fundación Bitcoin Iberoamérica.</p>
+            <div class="card-links">
+              <a href="https://labitconf.com" target="_blank" rel="noopener" class="card-link" title="Web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://x.com/labitconf" target="_blank" rel="noopener" class="card-link" title="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/labitconf/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://ar.linkedin.com/company/labitconf" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UC7fH0kNfLJ25QN68qOs5K1Q" target="_blank" rel="noopener" class="card-link" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONG Bitcoin Argentina -->
+        <div class="project-card">
+          <img src="assets/projects/image8.jpeg" alt="ONG Bitcoin Argentina" class="card-img" />
+          <div class="card-body">
+            <h3 data-i18n="p4_title">ONG Bitcoin Argentina</h3>
+            <p data-i18n="p4_desc">Proyecto de impacto social: pintura y reparación de escuelas en comunidades vulnerables de Argentina.</p>
+            <div class="card-links">
+              <a href="https://bitcoinargentina.org" target="_blank" rel="noopener" class="card-link" title="Web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/ongbitcoinargentina/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://x.com/BitcoinAR" target="_blank" rel="noopener" class="card-link" title="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/ong-bitcoin-argentina/" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/c/OngBitcoinArgentina" target="_blank" rel="noopener" class="card-link" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Escuelita Bitcoin -->
+        <div class="project-card">
+          <img src="assets/projects/image5.jpeg" alt="Escuelita Bitcoin" class="card-img" />
+          <div class="card-body">
+            <h3 data-i18n="p2_title">Escuelita Bitcoin</h3>
+            <p data-i18n="p2_desc">Programa de educación financiera con Bitcoin orientado a comunidades con acceso limitado al sistema bancario.</p>
+            <div class="card-links">
+              <a href="https://x.com/escuelitabtc" target="_blank" rel="noopener" class="card-link" title="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/escuelitabitcoin/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCScraxohs8o54Fo1WVFq2fw" target="_blank" rel="noopener" class="card-link" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bitcoineta -->
+        <div class="project-card">
+          <img src="assets/projects/image4.jpeg" alt="Bitcoineta del Mundo" class="card-img" />
+          <div class="card-body">
+            <h3 data-i18n="p3_title">Bitcoineta de Argentina al Mundo</h3>
+            <p data-i18n="p3_desc">Vehículos itinerantes de educación Bitcoin activos en Argentina, Chile, El Salvador, Kenya, Europa, Paraguay y muchos otros.</p>
+            <div class="card-links">
+              <a href="https://bitcoineta.com" target="_blank" rel="noopener" class="card-link" title="Web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/bitcoineta/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://x.com/labitcoineta" target="_blank" rel="noopener" class="card-link" title="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UClP2-y1ZXXyq0ibuASjL-gQ" target="_blank" rel="noopener" class="card-link" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Librería de Satoshi -->
+        <div class="project-card">
+          <img src="assets/projects/libdesatoshi.png" alt="Librería de Satoshi" class="card-img" />
+          <div class="card-body">
+            <h3 data-i18n="p1_title">Librería de Satoshi</h3>
+            <p data-i18n="p1_desc">Financiamiento y difusión de literatura Bitcoin en español y portugués para democratizar el conocimiento.</p>
+            <div class="card-links">
+              <a href="https://libreriadesatoshi.com" target="_blank" rel="noopener" class="card-link" title="Web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://x.com/libdesatoshi" target="_blank" rel="noopener" class="card-link" title="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/libreriadesatoshi/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/libdesatoshi" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCtnQ7zoEh6nYSp5DkgFz7Nw" target="_blank" rel="noopener" class="card-link" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eventos Regionales -->
+        <div class="project-card">
+          <img src="assets/projects/cover-latam.png" alt="Eventos Regionales" class="card-img" />
+          <div class="card-body">
+            <h3 data-i18n="p5_title">Eventos Regionales</h3>
+            <p data-i18n="p5_desc">Patrocinamos BitcoinTalks y Blockchain Summit (Uruguay), Bitcoast (Chile) y eventos B2B en México.</p>
+            <div class="card-links">
+              <a href="https://blockchainsummit.global" target="_blank" rel="noopener" class="card-link" title="Blockchain Summit Global">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </a>
+              <a href="https://labitconf.com" target="_blank" rel="noopener" class="card-link" title="LABITCONF">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LABIF -->
+        <div class="project-card project-card--highlight project-card--labif">
+          <img src="assets/projects/labif-banner.png" alt="LABIF — Latin America Bitcoin Impact Fund" class="card-img" style="object-position: left center;" />
+          <div class="card-body">
+            <h3>LABIF <span class="tag" data-i18n="tag_iniciativa">Iniciativa FBI</span></h3>
+            <p data-i18n-html="p7_desc_html">El <strong>Latin American Bitcoin Impact Fund — LABIF</strong> es una iniciativa estratégica para coordinar y amplificar capital en apoyo a la adopción, educación y expansión del ecosistema Bitcoin en Latinoamérica. Establecido para 2026 y diseñado para renovarse año a año, el Fondo busca movilizar sponsors alineados para fortalecer la infraestructura Bitcoin en la región. Enfoque en <strong>Capital Coordinado</strong>: financiamiento recurrente y anual con selección rigurosa para builders de alto impacto.</p>
+            <div class="labif-total"><span class="labif-year-inline" data-i18n="labif_year">Para el 2026:</span> <span class="lbtc">2.51</span> BTC · ~$<span class="lusd">164,000</span> USD</div>
+            <div class="labif-sponsors">
+              <p class="labif-sponsors-title" data-i18n="labif_sponsors_label">Sponsors</p>
+              <div class="sponsor-logos">
+                <div class="sponsor-item">
+                  <a href="https://bitcoiniberoamerica.org" target="_blank" rel="noopener">
+                    <img src="assets/logo-fullcolor.png" alt="Fundación Bitcoin Iberoamérica" class="sponsor-logo sponsor-logo--fbi" />
+                  </a>
+                </div>
+                <div class="sponsor-item">
+                  <a href="https://paystand.org" target="_blank" rel="noopener">
+                    <img src="assets/sponsors/paystand-new.png" alt="Paystand.org" class="sponsor-logo" />
+                  </a>
+                </div>
+                <div class="sponsor-item">
+                  <a href="https://bitcoinbeach.com" target="_blank" rel="noopener">
+                    <img src="assets/sponsors/bitcoin-beach.svg" alt="Bitcoin Beach" class="sponsor-logo sponsor-logo--dark" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="labif-geyser-row">
+              <a href="https://geyser.fund/impact-funds/latam-impact-fund" target="_blank" rel="noopener" class="geyser-badge">
+                <span class="labif-powered">powered by</span>
+                <img src="assets/sponsors/geyser.svg" alt="Geyser.fund" class="geyser-logo" />
+              </a>
+              <a href="https://geyser.fund/impact-funds/latam-impact-fund" target="_blank" rel="noopener" class="btn-geyser" data-i18n="labif_cta">Ver en Geyser →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section id="equipo">
+    <div class="container">
+      <div class="section-label" data-i18n="equipo_label">Quiénes somos</div>
+      <div class="hb-title-wrap">
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon" aria-hidden="true"/>
+        <h2 data-i18n="equipo_title">Equipo</h2>
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon hb-flip" aria-hidden="true"/>
+      </div>
+
+      <!-- Socios Fundadores -->
+      <p class="equipo-sublabel" data-i18n="equipo_socios_label">Fundadores</p>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <img src="assets/founders/rodolfo-andragnes.png" alt="Rodolfo Andragnes" class="founder-photo" />
+          <h3 class="founder-name">Rodolfo Andragnes</h3>
+          <p class="founder-role" data-i18n="role_socio">Fundador</p>
+          <div class="founder-social">
+            <a href="https://x.com/rodolfobits" target="_blank" rel="noopener" class="card-link" title="X">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/rodolfo_andragnes/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rodolfoandragnes/" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="founder-card">
+          <img src="assets/founders/franco-amati.jpg" alt="Franco Amati" class="founder-photo" />
+          <h3 class="founder-name">Franco Amati</h3>
+          <p class="founder-role" data-i18n="role_socio">Fundador</p>
+          <div class="founder-social">
+            <a href="https://x.com/franamati" target="_blank" rel="noopener" class="card-link" title="X">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/fran.amati/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="founder-card">
+          <img src="assets/founders/diego-gutierrez.jpg" alt="Diego Gutiérrez Zaldívar" class="founder-photo" />
+          <h3 class="founder-name">Diego Gutiérrez Zaldívar</h3>
+          <p class="founder-role" data-i18n="role_socio">Fundador</p>
+          <div class="founder-social">
+            <a href="https://x.com/dieguito" target="_blank" rel="noopener" class="card-link" title="X">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/dieguito9000/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/diegogutierrezzaldivar/" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dirección -->
+      <p class="equipo-sublabel" data-i18n="equipo_dir_label">Dirección</p>
+      <div class="founders-grid founders-grid--single">
+        <div class="founder-card founder-card--director">
+          <img src="assets/founders/luis-canessa.png" alt="Luis J. Canessa" class="founder-photo" />
+          <h3 class="founder-name">Luis J. Canessa</h3>
+          <p class="founder-role" data-i18n="role_director">Director</p>
+          <div class="founder-social">
+            <a href="https://x.com/luisjcanessa" target="_blank" rel="noopener" class="card-link" title="X">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/luiscanessa/" target="_blank" rel="noopener" class="card-link" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/luiscanessa/" target="_blank" rel="noopener" class="card-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <div class="section-label" data-i18n="contacto_label">Hablemos</div>
+      <div class="hb-title-wrap">
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon" aria-hidden="true"/>
+        <h2 data-i18n="contacto_title">Contacto</h2>
+        <img src="assets/honey-badger-real.jpg" alt="" class="hb-icon hb-flip" aria-hidden="true"/>
+      </div>
+      <p class="section-intro" data-i18n="contacto_intro">
+        ¿Querés involucrarte, patrocinar un proyecto o conocer más sobre la Fundación? Escríbenos.
+      </p>
+      <div class="contact-block">
+        <a href="mailto:info@bitcoiniberoamerica.org" class="contact-email">
+          info@bitcoiniberoamerica.org
+        </a>
+        <span class="contact-note" data-i18n="contact_note">Se habla español</span>
+      </div>
+      <div class="social-links">
+        <a href="https://x.com/FBI_Bitcoin" target="_blank" rel="noopener" class="social-btn social-btn--icon" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/bitcoiniberoamerica/" target="_blank" rel="noopener" class="social-btn social-btn--icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/bitcoiniberoamerica" target="_blank" rel="noopener" class="social-btn social-btn--icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+      <p class="contact-location" data-i18n="contact_location">Con registro y oficina central en Uruguay.</p>
+    </div>
+  </section>
+
+  <!-- HONEY BADGER BAND -->
+  <div class="hb-band" aria-hidden="true">
+    <img src="assets/honey-badger-real.jpg" alt=""/>
+    <img src="assets/honey-badger-real.jpg" alt="" class="hb-flip"/>
+    <img src="assets/honey-badger-real.jpg" alt=""/>
+    <img src="assets/honey-badger-real.jpg" alt="" class="hb-flip"/>
+    <img src="assets/honey-badger-real.jpg" alt=""/>
+    <img src="assets/honey-badger-real.jpg" alt="" class="hb-flip"/>
+    <img src="assets/honey-badger-real.jpg" alt=""/>
+    <img src="assets/honey-badger-real.jpg" alt="" class="hb-flip"/>
+    <img src="assets/honey-badger-real.jpg" alt=""/>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="assets/logo-fullcolor.png" alt="" class="footer-phoenix-bg" aria-hidden="true" />
+    <div class="container footer-inner">
+      <img src="assets/logo-fullcolor.png" alt="FBI" class="footer-logo" />
+      <p data-i18n="footer_copy">© 2026 Fundación Bitcoin Iberoamérica. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

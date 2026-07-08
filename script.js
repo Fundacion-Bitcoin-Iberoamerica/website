@@ -53,6 +53,8 @@ const translations = {
     contact_note: "Se habla español",
     contact_location: "Con registro y oficina central en Uruguay.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. Todos los derechos reservados.",
+    og_title: "Fundacion Bitcoin Iberoamerica",
+    og_description: "Promoviendo educación, innovación y adopción de Bitcoin en Iberoamerica. Organizacion sin fines de lucro pionera en la región.",
   },
   en: {
     nav_mision: "Mission",
@@ -107,6 +109,8 @@ const translations = {
     contact_note: "We speak Spanish & English",
     contact_location: "Registered and headquartered in Uruguay.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. All rights reserved.",
+    og_title: "Fundacion Bitcoin Iberoamerica",
+    og_description: "Promoting Bitcoin education, innovation, and adoption across Iberoamerica. A pioneering nonprofit organization in the region.",
   },
   pt: {
     nav_mision: "Missão",
@@ -161,6 +165,8 @@ const translations = {
     contact_note: "Falamos português",
     contact_location: "Registrada e com sede central no Uruguai.",
     footer_copy: "© 2026 Fundación Bitcoin Iberoamérica. Todos os direitos reservados.",
+    og_title: "Fundacion Bitcoin Iberoamerica",
+    og_description: "Promovendo educação, inovação e adoção do Bitcoin na Iberoamerica. Organização sem fins lucrativos pioneira na região.",
   }
 };
 
@@ -181,6 +187,12 @@ function setLang(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
   localStorage.setItem('lang', lang);
+  const localeMap = { es: 'es_ES', en: 'en_US', pt: 'pt_BR' };
+  ['meta[property="og:title"]', 'meta[name="twitter:title"]']
+    .forEach(sel => document.querySelector(sel)?.setAttribute('content', t.og_title));
+  ['meta[property="og:description"]', 'meta[name="twitter:description"]', 'meta[name="description"]']
+    .forEach(sel => document.querySelector(sel)?.setAttribute('content', t.og_description));
+  document.querySelector('meta[property="og:locale"]')?.setAttribute('content', localeMap[lang] || 'es_ES');
   highlightBitcoin();
 }
 

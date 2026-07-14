@@ -372,7 +372,7 @@ h2 {
   transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
 .card-link:hover { border-color: var(--orange); color: var(--orange); background: var(--orange-light); }
-.btn-libro {
+a.btn-libro {
   display: inline-flex;
   align-items: center;
   height: 30px;
@@ -386,7 +386,7 @@ h2 {
   white-space: nowrap;
   transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
-.btn-libro:hover { border-color: var(--orange); color: var(--orange); background: var(--orange-light); }
+a.btn-libro:hover { border-color: var(--orange); color: var(--orange); background: var(--orange-light); }
 .labif-sponsors {
   display: flex;
   flex-direction: column;

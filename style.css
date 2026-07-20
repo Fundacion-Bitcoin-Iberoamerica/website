@@ -351,6 +351,7 @@ h2 {
   border-radius: 999px;
 }
 .project-card p { font-size: 0.98rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.5rem; }
+.project-card p > strong { color: var(--text); font-weight: 700; }
 .card-links {
   display: flex;
   align-items: center;
